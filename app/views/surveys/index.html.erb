@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>        
+    </head>
+    <body>
+        <form action="/create" method="post">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        	<h3>Please fill out the information below.</h3>
+        	<label>Your Name: <input type="text" name="user[name]"></label>
+        	<label>Dojo Location: 
+        		<select name="user[location]">
+        			<option>Group 1</option>
+        			<option>Group 2</option>
+        			<option>Group 3A</option>
+					<option>Group 3B</option>
+        			<option>Group 4</option>
+					<option>Group 5</option>
+        		</select>	
+        	</label>
+        	<label>Favorite Language: 
+        		<select name="user[language]">
+					<option>C#</option>
+					<option>C++</option>
+					<option>Java</option>
+        			<option>Javascript</option>
+        			<option>PHP</option>
+        			<option>Python</option>
+					<option>R</option>
+					<option>Swift</option>
+        		</select>	
+        	</label>
+        	<label>Comment (optional): </label>
+			<textarea name="user[comment]"></textarea> 
+        	<input type='submit' value='Submit'>
+        </form>	
+    </body>
+</html>

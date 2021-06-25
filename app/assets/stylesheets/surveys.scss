@@ -1,0 +1,78 @@
+// Place all the styles related to the Surveys controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gray;
+    padding: 120px;
+    margin: 0px auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin: 0px auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    width: 320px;
+    margin: 5px auto;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+input[type=submit]{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: beige;
+}
+
+.error {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    background-color: crimson;
+    border: solid black 2px;
+}
+
+.success {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    background-color: green;
+    border: solid black 2px;
+}
